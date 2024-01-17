@@ -1,0 +1,21 @@
+//Colores Clases
+$color-success: #2ecc72;
+$color-warning: #f1c40f;
+$color-error:#e74c3c;
+$color-normal: #333333;
+//Heredar
+%message-shared {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+//Img
+$img-size: 300px;
+$border-radius: 45%;
+//Mixin
+@mixin vendor($property,$value){
+    -webkit-#{$property}:$value;
+    -moz-#{$property}:$value;
+    -ms-#{$property}:$value;
+    -o-#{$property}:$value;
+    #{$property}:$value;
+}
