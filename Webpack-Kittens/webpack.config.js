@@ -7,8 +7,9 @@ module.exports = {
     application: './src/js/application.js',
   },
   output: {
-    filename: 'js/prueba.js',
+    filename: 'js/all.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
   },
   module: {
     rules: [

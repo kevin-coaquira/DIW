@@ -5,153 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
     <title>Kittens "R" Us</title>
-
-    <link rel="stylesheet" href="dist/css/application.css">
-    <link href='http://fonts.googleapis.com/css?family=Didact+Gothic|Ribeye+Marrow' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--<script src="js/modernizer-2.5.2.min.js"></script>-->
     
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper clearfix">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="kittens.html">Kittens</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <h1>Kittens "R" Us</h1>
+    <!-- Top App bar -->
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+          <span class="mdc-top-app-bar__title">Kittens "R" Us</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+        </section>
       </div>
     </header>
+    <main class="mdc-top-app-bar--fixed-adjust">
+      <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+              <!-- tab-scroller -->
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__text-label">Home</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
 
-    <div class="content">
-      <div class="wrapper clearfix">
-        <form class="search">
-          <input type="search" />
-          <button>Go</button>
-        </form>
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__text-label">Kittens</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
 
-        <h1>Newest Adoptables</h1>
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__text-label">About</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
 
-        <ul class="kittens clearfix">
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-          <li>
-            <img class="kitten" />
-            <footer>
-              <label class="name"></label>
-              <small class="age"></small>
-            </footer>
-          </li>
-        </ul>
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__text-label">Contact</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="subcontent">
-      <div class="wrapper clearfix">
-        <section class="news">
-          <h3>Latest News</h3>
-          <ul>
-            <li><a href="#"><span class="poll">Poll:</span> 78% say, "Kittens are cuter than puppies"</a></li>
-            <li><a href="#"><span class="breaking">Breaking:</span> Grumpy Cat confesses soft spot for kittens</a></li>
-            <li><a href="#"><span class="quiz">Quiz:</span> Which kitteh should you adopt?</a></li>
-          </ul>
-          <a class="btn" href="#">Read More &raquo;</a>
-        </section>
-
-        <section class="events">
-          <h3>Upcoming Events</h3>
-          <ul>
-            <li><a href="#"><span class="data">February 2</span> Kitten Halftime Show</a></li>
-            <li><a href="#"><span class="data">April 4</span> Alley Cat Cruise (All Ages)</a></li>
-            <li><a href="#"><span class="date">May 23</span> Fur-Ball: Tigers vs. Bobcats</a></li>
-          </ul>
-          <a class="btn" href="#">View Calendar &raquo;</a>
-        </section>
-
-        <section class="location">
-          <h3>Location Information</h3>
-
-          <address>
-            Kittens "R" Us<br/>
-            248 W. Tomcat Lane<br/>
-            Catskillz, MT 80008
-          </address>
-
-          <dl>
-            <dt>Hours</dt>
-            <dd>
-              Monday - Friday : 9am to 9pm<br/>
-              Saturday : 10am to 5pm<br/>
-              Sunday : 12pm to 5pm
-            </dd>
-          </dl>
-        </section>
-      </div>
-    </div>
-
-    <footer class="footer">
-      <div class="wrapper clearfix">
-        <nav class="navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="kittens.html">Kittens</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="copy">&copy; 2014 Kittens "R" Us</div>
-      </div>
-    </footer>
+      <!-- Layout -->
+      <div class="kittens">
+        <div class="mdc-layout-grid">
+          <div class="mdc-layout-grid__inner">
+            <!-- Card 1 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 1-->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 2 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 3 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 4 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 5 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 6 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 7 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+              <div class="mdc-card__media mdc-card__media mdc-card__media--16-9">
+                <div class="mdc-card__media-content">
+                  <img class="kitten">
+                </div>
+              </div>
+              <!-- Card Label 8 -->
+              <div class="mdc-card__actions">
+                <button class="mdc-button mdc-button--raised">
+                  <div class="mdc-button__ripple"></div>
+                  <span class="mdc-button__label">Adoptame</span>
+                  <span class="material-icons">pets</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
     <script src="dist/js/all.js"></script>
     <!--<script src="js/jquery-2.1.0.min.js"></script>-->
     <!--<script src="js/application.js"></script>-->
