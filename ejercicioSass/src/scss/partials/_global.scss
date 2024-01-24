@@ -1,0 +1,132 @@
+@import "vars";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+p {
+  text-align: justify;
+}
+//Clase success
+.success {
+  background-color: darken($color-success, 25%);
+}
+//Clase warning
+.warning {
+  background-color: darken($color-warning, 25%);
+}
+//Clase error
+.error {
+  background-color: darken($color-error, 25%);
+}
+//Selector p. Seleccionar 4t p
+p:nth-of-type(4),
+h4 {
+  background-color: lighten($color-normal, 50%);
+}
+//------------------------------------------------------
+//rbg()
+//color-0-40-100 colorbg-50-100-0
+@for $i from 0 through 9 {
+    @for $j from 0 through 9 {
+      @for $k from 0 through 10 {
+        .color-#{$i*10}-#{$j*10}-#{$k*10} {
+          color: rgb($i*10%, $j*10%, $k*10%);
+        }
+      }
+    }
+  }
+  
+  @for $x from 0 through 9 {
+    @for $y from 0 through 10 {
+      @for $z from 0 through 9 {
+        .colorbg-#{$x*10}-#{$y*10}-#{$z*10} {
+          background-color: rgb($x*10%,$y*10%, $z*10%);
+        }
+      }
+    }
+  }
+  
+//---------------------------------------------------------
+//Table color
+.color-80-80-80 {
+  color: rgb(80%, 80%, 80%);
+}
+.colorbg-10-10-10 {
+  background-color: rgb(10%, 10%, 10%);
+}
+//Table
+table {
+  width: 100%;
+  @extend %message-shared;
+}
+tr {
+  width: 33.333%;
+  @extend %message-shared;
+}
+td {
+  width: 33.333%;
+  @extend %message-shared;
+}
+th {
+  width: 33.333%;
+  background-color: black;
+  color: white;
+  @extend %message-shared;
+}
+//Bucle para reducir em
+@for $i from 1 through 6 {
+  $fontSize: calc(2em - #{$i * 0.2});
+  h#{$i} {
+    font-size: #{$fontSize}em;
+  }
+}
+
+//Imagen
+img {
+  height: $img-size;
+  width: $img-size;
+  border-radius: $border-radius;
+}
+.grayscale {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: grayscale(60%);
+}
+.blur {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: blur(4px);
+}
+.sepia {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: sepia(60%);
+}
+.hue-rotate {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: hue-rotate(90deg);
+}
+.invert {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: invert(50%);
+}
+.brightness {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: brightness(50%);
+}
+.contrast {
+  height: $img-size;
+  width: $img-size;
+  @include vendor("border-radius", $border-radius);
+  filter: contrast(1.75);
+}
